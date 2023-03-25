@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Api\KecamatanController;
 use App\Http\Controllers\Api\ProvinsiController;
 use App\Http\Controllers\Api\FakultasController;
 use App\Http\Controllers\Api\ListBankController;
@@ -8,7 +9,6 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('provinsi', [ProvinsiController::class, 'provinsi']);
-
 Route::get('fakultas', [FakultasController::class, 'fakultas']);
-
 Route::get('list_bank', [ListBankController::class, 'list_bank']);
+Route::get('kecamatan', [KecamatanController::class, 'kecamatan']);
