@@ -14,7 +14,7 @@ class DesaResponse implements JsonSerializable
      * @param string $id
      * @param string $name
      */
-    public function __construct(string $id, string $name, string $kecamatan_id)
+    public function __construct(string $id, string $kecamatan_id, string $name)
     {
         $this->id = $id;
         $this->kecamatan_id = $kecamatan_id;
