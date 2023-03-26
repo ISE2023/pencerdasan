@@ -18,6 +18,25 @@ class SqlDesaRepository
         return $this->constructFromRows($rows->all());
     }
 
+    public function getAllKecamatan(): array
+    {
+        $rows = DB::table('kecamatan')->get();
+
+        if (!$rows) {
+            return null;
+        }
+
+        $kecamatan = [];
+        foreach ($rows as $row) {
+        $result[] = new Kecamatan(
+            $row->id,
+            $row->name,
+        );
+    }
+    return $kecamatan;
+    }
+
+
     public function find(int $id): ?Desa
     {
         $row = DB::table('desa')->where('id', $id)->first();

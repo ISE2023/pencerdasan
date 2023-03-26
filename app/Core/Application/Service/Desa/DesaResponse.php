@@ -25,7 +25,7 @@ class DesaResponse implements JsonSerializable
     {
         return [
             'id' => $this->id,
-            'kecamata' => $this->kecamatan_id,
+            'kecamatan_id' => $this->kecamatan_id,
             'name' => $this->name,
         ];
     }
