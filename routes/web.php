@@ -12,3 +12,7 @@
 */
 
 require app_path('Http/Routes')."/Web.php";
+
+Route::view('','pages.login-page');
+
+Route::view('user', 'pages.user');
