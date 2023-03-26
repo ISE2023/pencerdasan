@@ -12,3 +12,11 @@
 */
 
 require app_path('Http/Routes')."/Web.php";
+
+Route::get('/', function(){
+    return view('pages.login-page');
+});
+
+Route::get('/user', function(){
+    return view('pages.user');
+});
