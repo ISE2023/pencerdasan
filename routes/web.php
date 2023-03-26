@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\registerController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,3 +14,9 @@
 */
 
 require app_path('Http/Routes')."/Web.php";
+
+Route::get('/register', function () {
+    return view('pages/register');
+});
+
+Route::post('/register', [registerController::class, 'getData']);
