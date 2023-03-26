@@ -3,7 +3,7 @@
 namespace App\Core\Application\Service\Kecamatan;
 
 use App\Core\Application\Service\Kecamatan\KecamatanResponse;
-use App\Core\Domain\Repository\KecamatanRepository;
+use App\Core\Domain\Repository\SqlKecamatanRepository;
 use App\Core\Domain\Models\Kecamatan\Kecamatan;
 
 class KecamatanService
