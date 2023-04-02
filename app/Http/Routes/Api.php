@@ -5,11 +5,7 @@ use App\Http\Controllers\Api\DepartemenController;
 use App\Http\Controllers\Api\KabupatenController;
 use App\Http\Controllers\Api\FakultasController;
 use App\Http\Controllers\Api\ListBankController;
-<<<<<<< Updated upstream
-use App\Http\Controllers\Api\DesaController;
-=======
-use App\Http\Controllers\Api\UrlShortenerController;
->>>>>>> Stashed changes
+use App\Http\Controllers\Api\ShortenerController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -30,3 +26,4 @@ Route::get('desa', [DesaController::class, 'desa']);
 Route::get('url-shortener', [UrlShortenerController::class, 'url-shortener']);
 
 >>>>>>> Stashed changes
+Route::get('url-shortener', [UrlController::class, 'url-shortener']);
