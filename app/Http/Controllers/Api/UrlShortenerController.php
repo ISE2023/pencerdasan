@@ -17,13 +17,13 @@ class UrlShortenerController extends Controller
 // {
 //     “success”: true,
 //     “data” : “http://ise-its.com/”,
-//      “message” : “Berhasil mendapatkan url panjang” 
+//      “message” : “Berhasil mendapatkan url panjang”
 // }
 
 // HTTP CODE : 400 BAD REQUEST
 // {
 //     “success”: false,
-//     “message” : “Tidak berhasil mendapatkan url panjang” 
+//     “message” : “Tidak berhasil mendapatkan url panjang”
 // }
 
     }

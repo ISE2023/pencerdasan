@@ -20,10 +20,6 @@ Route::get('fakultas', [FakultasController::class, 'fakultas']);
 
 Route::get('list_bank', [ListBankController::class, 'list_bank']);
 
-<<<<<<< Updated upstream
 Route::get('desa', [DesaController::class, 'desa']);
-=======
-Route::get('url-shortener', [UrlShortenerController::class, 'url-shortener']);
 
->>>>>>> Stashed changes
-Route::get('url-shortener', [UrlController::class, 'url-shortener']);
+Route::get('url-shortener', [UrlShortenerController::class, 'url-shortener']);
