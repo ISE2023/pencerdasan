@@ -28,7 +28,7 @@ class UrlShortener
     /**
      * @return string
      */
-    public function getName(): string
+    public function getlink(): string
     {
         return $this->name;
     }
