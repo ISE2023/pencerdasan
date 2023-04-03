@@ -23,3 +23,5 @@ Route::get('list_bank', [ListBankController::class, 'list_bank']);
 Route::get('desa', [DesaController::class, 'desa']);
 
 Route::get('url-shortener', [UrlShortenerController::class, 'url-shortener']);
+
+Route::post('shorten', 'UrlController@shorten');
