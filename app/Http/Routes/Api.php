@@ -5,7 +5,8 @@ use App\Http\Controllers\Api\DepartemenController;
 use App\Http\Controllers\Api\KabupatenController;
 use App\Http\Controllers\Api\FakultasController;
 use App\Http\Controllers\Api\ListBankController;
-use App\Http\Controllers\Api\ShortenerController;
+use App\Http\Controllers\Api\UrlShortenerController;
+use App\Http\Controllers\UrlController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
