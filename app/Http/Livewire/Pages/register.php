@@ -4,7 +4,7 @@ namespace App\Http\Livewire\Pages;
 
 use Livewire\Component;
 
-class register extends Component
+class Register extends Component
 {
     public function render()
     {

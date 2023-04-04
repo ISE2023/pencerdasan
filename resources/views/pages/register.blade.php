@@ -6,9 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>register</title>
     @vite('resources/css/app.css')
+    @livewireStyles()
 </head>
 <body class=" bg-[#f1e9e9] bg-cover">
     @livewire('pages.register')
+    @livewireScripts()
 </body>
 </html>
 

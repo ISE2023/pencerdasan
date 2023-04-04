@@ -2,3 +2,4 @@
     LightWorks
 </div>
 @livewire('components.register-form')
+<div class=" h-10"></div>
