@@ -25,5 +25,6 @@ Route::get('desa', [DesaController::class, 'desa']);
 
 Route::get('shortener/{short_url}',[ShortenerController::class, 'getShortener']);
 
-Route::get('url-shortener', [UrlController::class, 'urlshortener']);
-Route::post('url-shortener', 'UrlController@shorten');
+// Route::get('url-shortener', [UrlController::class, 'urlshortener']);
+
+Route::post('url-shortener', [ShortenerController::class, 'postShortener']);

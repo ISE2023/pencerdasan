@@ -20,7 +20,7 @@ class Shortener
         $this->short_url = $short_url;
         $this->long_url = $long_url;
         $this->is_customized = $is_customized;
-        $this->visitor = $visitor;
+        $this->visitor = $visitor; //logikanya g paham
         $this->user_id = $user_id;
     }
 
