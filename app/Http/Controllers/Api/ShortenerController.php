@@ -24,7 +24,7 @@ class ShortenerController extends Controller
 
     }
 
-    public function postShortener(ShortenerService $service) //JsonResponse
+    public function postShortener(ShortenerService $service) 
     {
         $request = Request::post();
         $short_url = $request['short_url'];
