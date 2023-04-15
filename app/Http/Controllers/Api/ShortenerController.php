@@ -22,4 +22,18 @@ class ShortenerController extends Controller
         return $this->successWithData($response, "Berhasil mendapatkan url panjang");
 
     }
+
+    public function postShortener(ShortenerService $service, string $short_url): JsonResponse
+    {
+        $response = $service->postUrl($short_url); //postUrl
+        if (empty($response)) //indikator sukses masi bingung
+        {
+            $error = new UserException('Tidak berhasil memendekkan url',2000,400); 
+            return $error-> render();
+        }
+
+
+        return $this->successWithData($response, "Berhasil memendekkan url");
+
+    }
 }
