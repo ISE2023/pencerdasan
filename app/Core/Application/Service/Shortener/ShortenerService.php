@@ -35,6 +35,7 @@ class ShortenerService
             $Shorteners->getlong_url()
         );
     }
+    
 }
 
 // private function generateAlias(){
